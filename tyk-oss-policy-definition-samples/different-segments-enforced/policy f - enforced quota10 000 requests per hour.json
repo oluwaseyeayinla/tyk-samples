@@ -1,0 +1,19 @@
+{
+	"access_rights": {},
+	"active": true,
+	"id": "policy_f",
+    "name": "policy_f",
+	"partitions": {
+		"acl": false,
+		"complexity": false,
+		"per_api": false,
+		"quota": true,
+		"rate_limit": false
+	},
+	"quota_max": 10000,
+  	"quota_renewal_rate": 3600,
+	"state": "active",
+	"tags": [],
+	"throttle_interval": -1,
+	"throttle_retry_limit": -1
+}

@@ -1,0 +1,27 @@
+{
+	"access_rights": {
+		"API 1": {
+			"api_name": "API 1",
+			"api_id": "API 1",
+			"versions": [
+				"Default"
+			]
+		}
+	},
+	"active": true,
+	"partitions": {
+		"acl": true,
+		"complexity": false,
+		"per_api": false,
+		"quota": true,
+		"rate_limit": true
+	},
+	"per": 60,
+	"quota_max": -1,
+  "quota_renewal_rate": -1,
+	"rate": 1000,
+	"state": "active",
+	"tags": [],
+	"throttle_interval": -1,
+	"throttle_retry_limit": -1
+}

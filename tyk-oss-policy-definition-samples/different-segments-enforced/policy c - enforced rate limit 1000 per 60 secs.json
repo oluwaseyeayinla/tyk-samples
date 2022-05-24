@@ -1,0 +1,19 @@
+{
+	"access_rights": {},
+	"active": true,
+	"id": "policy_c",
+    "name": "policy_c",
+	"partitions": {
+		"acl": false,
+		"complexity": false,
+		"per_api": false,
+		"quota": false,
+		"rate_limit": true
+	},
+	"per": 60,
+	"rate": 1000,
+	"state": "active",
+	"tags": [],
+	"throttle_interval": -1,
+  "throttle_retry_limit": -1
+}

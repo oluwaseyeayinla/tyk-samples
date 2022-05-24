@@ -1,0 +1,23 @@
+{
+	"access_rights": {
+		"API 2": {
+			"api_name": "API 2",
+			"api_id": "API 2",
+			"versions": [
+				"Default"
+			]
+		}
+	},
+	"active": true,
+	"id": "policy_b",
+    "name": "policy_b",
+	"partitions": {
+		"acl": true,
+		"complexity": false,
+		"per_api": false,
+		"quota": false,
+		"rate_limit": false
+	},
+	"state": "active",
+	"tags": []
+}
