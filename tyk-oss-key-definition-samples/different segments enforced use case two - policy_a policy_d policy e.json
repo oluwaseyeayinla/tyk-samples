@@ -1,6 +1,6 @@
 {
     "access_rights": {},
-    "alias": "Segments Enforced Use Case Two",
+    "alias": "Different Segments Enforced Use Case Two",
     "apply_policies": [
         "policy_a",
         "policy_d",

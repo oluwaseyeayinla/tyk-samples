@@ -1,8 +1,8 @@
 {
 	"access_rights": {
-		"API 2": {
-			"api_name": "API 2",
-			"api_id": "API 2",
+		"2": {
+			"api_name": "API Two",
+			"api_id": "2",
 			"versions": [
 				"Default"
 			]

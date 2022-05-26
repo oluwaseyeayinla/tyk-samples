@@ -1,0 +1,14 @@
+{
+    "access_rights": {},
+    "alias": "Both Paritioned and Non Paritioned Use Case",
+    "apply_policies": [
+        "policy_a"
+    ],
+    "apply_policy_id": "",
+    "expires": 86400,
+    "is_inactive": false,
+    "meta_data": {
+    },
+    "tags": [
+    ]
+}

@@ -1,10 +1,9 @@
 {
     "access_rights": {},
-    "alias": "Segments Enforced Use Case One",
+    "alias": "Both Paritioned and Non Paritioned Use Case",
     "apply_policies": [
         "policy_a",
-        "policy_c",
-        "policy_e"
+        "policy_b"
     ],
     "apply_policy_id": "",
     "expires": 86400,

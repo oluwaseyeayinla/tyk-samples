@@ -10,14 +10,16 @@
 	},
 	"active": true,
 	"id": "policy_a",
-    "name": "policy_a",
+   "name": "policy_a",
 	"partitions": {
 		"acl": true,
 		"complexity": false,
 		"per_api": false,
-		"quota": false,
+		"quota": true,
 		"rate_limit": false
 	},
+	"quota_max": 100,
+	"quota_renewal_rate": 3600,
 	"state": "active",
 	"tags": []
 }

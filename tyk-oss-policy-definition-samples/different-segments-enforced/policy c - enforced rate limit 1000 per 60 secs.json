@@ -2,7 +2,7 @@
 	"access_rights": {},
 	"active": true,
 	"id": "policy_c",
-    "name": "policy_c",
+	"name": "policy_c",
 	"partitions": {
 		"acl": false,
 		"complexity": false,
@@ -15,5 +15,5 @@
 	"state": "active",
 	"tags": [],
 	"throttle_interval": -1,
-  "throttle_retry_limit": -1
+	"throttle_retry_limit": -1
 }

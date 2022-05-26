@@ -1,23 +1,25 @@
 {
 	"access_rights": {
-		"1": {
-			"api_name": "API One",
-			"api_id": "1",
+		"2": {
+			"api_name": "API Two",
+			"api_id": "2",
 			"versions": [
 				"Default"
 			]
 		}
 	},
 	"active": true,
-	"id": "policy_a",
-    "name": "policy_a",
+	"id": "policy_b",
+	"name": "policy_b",
 	"partitions": {
 		"acl": true,
 		"complexity": false,
 		"per_api": false,
-		"quota": false,
+		"quota": true,
 		"rate_limit": false
 	},
+	"quota_max": 50,
+	"quota_renewal_rate": 3600,
 	"state": "active",
 	"tags": []
 }

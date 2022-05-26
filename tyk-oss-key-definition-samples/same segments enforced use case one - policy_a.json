@@ -1,0 +1,14 @@
+{
+	"access_rights": {},
+	"alias": "Same Segments Enforced Use Case One",
+	"apply_policies": [
+		"policy_a"
+	],
+	"apply_policy_id": "",
+	"expires": 86400,
+	"is_inactive": false,
+	"meta_data": {},
+	"per": 60,
+	"rate": 10,
+	"tags": []
+}

@@ -2,7 +2,7 @@
 	"access_rights": {},
 	"active": true,
 	"id": "policy_e",
-    "name": "policy_e",
+	"name": "policy_e",
 	"partitions": {
 		"acl": false,
 		"complexity": false,
@@ -11,7 +11,7 @@
 		"rate_limit": false
 	},
 	"quota_max": -1,
-  	"quota_renewal_rate": -1,
+	"quota_renewal_rate": -1,
 	"state": "active",
 	"tags": [],
 	"throttle_interval": -1,
