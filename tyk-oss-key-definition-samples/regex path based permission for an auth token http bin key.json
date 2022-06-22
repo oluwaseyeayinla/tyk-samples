@@ -1,0 +1,83 @@
+{
+	"access_rights": {
+		"9464e1db3c974f047213c325075f3c4c": {
+			"allowance_scope": "",
+			"allowed_urls": [
+				{
+					"methods": [
+						"GET",
+						"POST",
+						"PUT",
+						"PATCH",
+						"DELETE",
+						"OPTIONS",
+						"HEAD"
+					],
+					"url": "^/rest-auth-token-http-bin-api/([^e]|e[^c]|c[^h]|h[^o]|o).*"
+				}
+			],
+			"api_id": "9464e1db3c974f047213c325075f3c4c",
+			"api_name": "REST Auth Token Http Bin API",
+			"field_access_rights": [],
+			"limit": {
+				"max_query_depth": 0,
+				"per": 0,
+				"quota_max": 0,
+				"quota_remaining": 0,
+				"quota_renewal_rate": 0,
+				"quota_renews": 0,
+				"rate": 0,
+				"set_by_policy": false,
+				"throttle_interval": 0,
+				"throttle_retry_limit": 0
+			},
+			"restricted_types": [],
+			"versions": [
+				"Default"
+			]
+		}
+	},
+	"alias": "",
+	"allowance": 1000,
+	"apply_policies": [
+		"62b1cce1754f7f0001cb9f9e"
+	],
+	"apply_policy_id": "",
+	"basic_auth_data": {
+		"hash_type": "",
+		"password": "",
+		"user": ""
+	},
+	"certificate": "",
+	"data_expires": 0,
+	"enable_detailed_recording": false,
+	"expires": 0,
+	"hmac_enabled": false,
+	"hmac_string": "",
+	"id_extractor_deadline": 0,
+	"is_inactive": false,
+	"jwt_data": {
+		"secret": ""
+	},
+	"key_id": "55dd654539cf9924f9604addae1f7b4d",
+	"last_check": 0,
+	"max_query_depth": -1,
+	"meta_data": {},
+	"monitor": {
+		"trigger_limits": null
+	},
+	"oauth_client_id": "",
+	"oauth_keys": null,
+	"oauth_keys_array": [],
+	"org_id": "61fd63e8a35fd4000162ed94",
+	"per": 60,
+	"quota_max": -1,
+	"quota_remaining": 0,
+	"quota_renewal_rate": -1,
+	"quota_renews": 1655901706,
+	"rate": 10,
+	"session_lifetime": 0,
+	"tags": [],
+	"throttle_interval": -1,
+	"throttle_retry_limit": -1
+}
