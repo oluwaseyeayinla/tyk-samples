@@ -1,0 +1,49 @@
+{
+	"api_id": "u17w3p2jhn56q0ftmiev8rabkd",
+	"auth": {
+		"auth_header_name": "authorization"
+	},
+	"auth_configs": {
+		"authtoken": {
+			"auth_header_name": "authToken"
+		},
+		"oidc": {
+			"auth_header_name": "oidc"
+		}
+	},
+	"base_identity_provided_by": "auth_token",
+	"definition": {
+		"key": "version",
+		"location": "header"
+	},
+	"name": "Demo Auth Token and OIDC Auth Zero",
+	"openid_options": {
+		"providers": [
+			{
+				"issuer": "https://oluwaseye.eu.auth0.com/",
+				"client_ids": {
+					"NmpVVkpHbkN2em9ZVXZyUFdNM2V6dUFVRWo0TUdJWVE=": "default"
+				}
+			}
+		],
+		"segregate_by_client": false
+	},
+	"org_id": "default",
+	"proxy": {
+		"listen_path": "/demo-auth-token-and-oidc-auth-zero/",
+		"strip_listen_path": true,
+		"target_url": "http://httpbin.org"
+	},
+	"slug": "demo-auth-token-and-oidc-auth-zero",
+	"use_keyless": false,
+	"use_openid": false,
+	"use_standard_auth": true,
+	"version_data": {
+		"not_versioned": true,
+		"versions": {
+			"Default": {
+				"name": "Default"
+			}
+		}
+	}
+}

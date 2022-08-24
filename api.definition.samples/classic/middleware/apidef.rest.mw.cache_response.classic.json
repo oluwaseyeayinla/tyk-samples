@@ -1,0 +1,435 @@
+{
+	"active": true,
+	"allowed_ips": [],
+	"api_id": "8889b2b053bd43fe604df5ed808cc9ec",
+	"auth": {
+		"auth_header_name": "Authorization",
+		"cookie_name": "",
+		"param_name": "",
+		"signature": {
+			"algorithm": "",
+			"allowed_clock_skew": 0,
+			"error_code": 0,
+			"error_message": "",
+			"header": "",
+			"secret": ""
+		},
+		"use_certificate": false,
+		"use_cookie": false,
+		"use_param": false,
+		"validate_signature": false
+	},
+	"auth_configs": {
+		"authToken": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"basic": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"coprocess": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"hmac": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"jwt": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"oauth": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		},
+		"oidc": {
+			"auth_header_name": "Authorization",
+			"cookie_name": "",
+			"param_name": "",
+			"signature": {
+				"algorithm": "",
+				"allowed_clock_skew": 0,
+				"error_code": 0,
+				"error_message": "",
+				"header": "",
+				"secret": ""
+			},
+			"use_certificate": false,
+			"use_cookie": false,
+			"use_param": false,
+			"validate_signature": false
+		}
+	},
+	"auth_provider": {
+		"meta": {},
+		"name": "",
+		"storage_engine": ""
+	},
+	"base_identity_provided_by": "",
+	"basic_auth": {
+		"body_password_regexp": "",
+		"body_user_regexp": "",
+		"cache_ttl": 0,
+		"disable_caching": false,
+		"extract_from_body": false
+	},
+	"blacklisted_ips": [],
+	"cache_options": {
+		"cache_all_safe_requests": false,
+		"cache_by_headers": [
+			"tenant-id"
+		],
+		"cache_control_ttl_header": "",
+		"cache_response_codes": [
+			200
+		],
+		"cache_timeout": 15,
+		"enable_cache": true,
+		"enable_upstream_cache_control": false
+	},
+	"certificates": [],
+	"client_certificates": [],
+	"config_data": {},
+	"CORS": {
+		"allow_credentials": false,
+		"allowed_headers": [
+			"Origin",
+			"Accept",
+			"Content-Type",
+			"X-Requested-With",
+			"Authorization"
+		],
+		"allowed_methods": [
+			"GET",
+			"POST",
+			"HEAD"
+		],
+		"allowed_origins": [
+			"*"
+		],
+		"debug": false,
+		"enable": false,
+		"exposed_headers": [],
+		"max_age": 24,
+		"options_passthrough": false
+	},
+	"custom_middleware": {
+		"auth_check": {
+			"name": "",
+			"path": "",
+			"raw_body_only": false,
+			"require_session": false
+		},
+		"driver": "",
+		"id_extractor": {
+			"extract_from": "",
+			"extract_with": "",
+			"extractor_config": {}
+		},
+		"post": [],
+		"post_key_auth": [],
+		"pre": [],
+		"response": []
+	},
+	"custom_middleware_bundle": "",
+	"definition": {
+		"key": "x-api-version",
+		"location": "header",
+		"strip_path": false
+	},
+	"disable_quota": false,
+	"disable_rate_limit": false,
+	"do_not_track": false,
+	"domain": "",
+	"dont_set_quota_on_create": false,
+	"enable_batch_request_support": false,
+	"enable_context_vars": false,
+	"enable_coprocess_auth": false,
+	"enable_detailed_recording": true,
+	"enable_ip_blacklisting": false,
+	"enable_ip_whitelisting": false,
+	"enable_jwt": false,
+	"enable_proxy_protocol": false,
+	"enable_signature_checking": false,
+	"event_handlers": {
+		"events": {}
+	},
+	"expire_analytics_after": 0,
+	"global_rate_limit": {
+		"per": 0,
+		"rate": 0
+	},
+	"graphql": {
+		"enabled": false,
+		"engine": {
+			"data_sources": [],
+			"field_configs": []
+		},
+		"execution_mode": "proxyOnly",
+		"playground": {
+			"enabled": false,
+			"path": ""
+		},
+		"proxy": {
+			"auth_headers": {}
+		},
+		"schema": "",
+		"subgraph": {
+			"sdl": ""
+		},
+		"supergraph": {
+			"merged_sdl": "",
+			"subgraphs": []
+		},
+		"type_field_configurations": [],
+		"version": "2"
+	},
+	"hmac_allowed_algorithms": [],
+	"hmac_allowed_clock_skew": -1,
+	"id": "6272538887a73f000165e3d1",
+	"internal": false,
+	"jwt_client_base_field": "",
+	"jwt_default_policies": [],
+	"jwt_expires_at_validation_skew": 0,
+	"jwt_identity_base_field": "",
+	"jwt_issued_at_validation_skew": 0,
+	"jwt_not_before_validation_skew": 0,
+	"jwt_policy_field_name": "",
+	"jwt_scope_claim_name": "",
+	"jwt_scope_to_policy_mapping": {},
+	"jwt_signing_method": "",
+	"jwt_skip_kid": false,
+	"jwt_source": "",
+	"listen_port": 0,
+	"name": "REST Cache Response Middleware",
+	"notifications": {
+		"oauth_on_keychange_url": "",
+		"shared_secret": ""
+	},
+	"oauth_meta": {
+		"allowed_access_types": [],
+		"allowed_authorize_types": [],
+		"auth_login_redirect": ""
+	},
+	"openid_options": {
+		"providers": [],
+		"segregate_by_client": false
+	},
+	"org_id": "61fd63e8a35fd4000162ed94",
+	"pinned_public_keys": {},
+	"protocol": "",
+	"proxy": {
+		"check_host_against_uptime_tests": false,
+		"disable_strip_slash": true,
+		"enable_load_balancing": false,
+		"listen_path": "/mw-cache-response/",
+		"preserve_host_header": false,
+		"service_discovery": {
+			"cache_timeout": 0,
+			"data_path": "",
+			"endpoint_returns_list": false,
+			"parent_data_path": "",
+			"port_data_path": "",
+			"query_endpoint": "",
+			"target_path": "",
+			"use_discovery_service": false,
+			"use_nested_query": false,
+			"use_target_list": false
+		},
+		"strip_listen_path": true,
+		"target_list": [],
+		"target_url": "http://host.docker.internal:80/anything",
+		"transport": {
+			"proxy_url": "",
+			"ssl_ciphers": [],
+			"ssl_force_common_name_check": false,
+			"ssl_insecure_skip_verify": false,
+			"ssl_max_version": 0,
+			"ssl_min_version": 0
+		}
+	},
+	"request_signing": {
+		"algorithm": "",
+		"certificate_id": "",
+		"header_list": [],
+		"is_enabled": false,
+		"key_id": "",
+		"secret": "",
+		"signature_header": ""
+	},
+	"response_processors": [],
+	"session_lifetime": 0,
+	"session_provider": {
+		"meta": {},
+		"name": "",
+		"storage_engine": ""
+	},
+	"slug": "rest-cache-response-middleware",
+	"strip_auth_data": false,
+	"tag_headers": [],
+	"tags": [],
+	"upstream_certificates": {},
+	"uptime_tests": {
+		"check_list": [],
+		"config": {
+			"expire_utime_after": 0,
+			"recheck_wait": 0,
+			"service_discovery": {
+				"cache_timeout": 60,
+				"data_path": "",
+				"endpoint_returns_list": false,
+				"parent_data_path": "",
+				"port_data_path": "",
+				"query_endpoint": "",
+				"target_path": "",
+				"use_discovery_service": false,
+				"use_nested_query": false,
+				"use_target_list": false
+			}
+		}
+	},
+	"use_basic_auth": false,
+	"use_go_plugin_auth": false,
+	"use_keyless": true,
+	"use_mutual_tls_auth": false,
+	"use_oauth2": false,
+	"use_openid": false,
+	"use_standard_auth": false,
+	"version_data": {
+		"default_version": "",
+		"not_versioned": true,
+		"versions": {
+			"Default": {
+				"expires": "",
+				"extended_paths": {
+					"advance_cache_config": [
+						{
+							"cache_key_regex": null,
+							"cache_response_codes": [
+								200
+							],
+							"method": "POST",
+							"path": "/post"
+						},
+						{
+							"cache_key_regex": "\"id\":[^,]*",
+							"cache_response_codes": [
+								200
+							],
+							"method": "POST",
+							"path": "/json"
+						}
+						
+					],
+					"cache": [
+						"/get",
+						"/head"
+					],
+					"url_rewrites": [
+						{
+							"path": "/json",
+							"method": "POST",
+							"match_pattern": "/json",
+							"rewrite_to": "https://neutral-gemsbok-gw.aws-use1.cloud-ara.tyk.io/mw-mock-response/json",
+							"triggers": []
+						}
+					]
+				},
+				"global_headers": {},
+				"global_headers_remove": [],
+				"global_response_headers": {},
+				"global_response_headers_remove": [],
+				"global_size_limit": 0,
+				"ignore_endpoint_case": false,
+				"name": "Default",
+				"override_target": "",
+				"paths": {
+					"black_list": [],
+					"ignored": [],
+					"white_list": []
+				},
+				"use_extended_paths": true
+			}
+		}
+	}
+}

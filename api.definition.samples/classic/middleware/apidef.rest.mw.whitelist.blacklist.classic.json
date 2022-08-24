@@ -1,0 +1,44 @@
+{
+	"active": true,
+	"allowed_ips": [
+		"41.58.51.84",
+		"102.67.1.5",
+		"102.67.1.7",
+		"102.67.1.9",
+		"127.0.0.1"
+	],
+	"api_id": "4ods3bqcj0alprum2wvxktgnei",
+	"auth_configs": {
+		"authToken": {
+			"auth_header_name": "Authorization"
+		}
+	},
+	"enable_context_vars": true,
+	"enable_ip_whitelisting": false,
+	"name": "Demo White List / Black List",
+	"protocol": "http",
+	"proxy": {
+		"listen_path": "/demo-whitelist-blacklist/",
+		"strip_listen_path": false,
+		"target_url": "http://httpbin.org/anything"
+	},
+	"slug": "demo-whitelist-blacklist",
+	"use_keyless": true,
+	"version_data": {
+		"not_versioned": true,
+		"versions": {
+			"Default": {
+				"extended_paths": {
+					"validate_json": []
+				},
+				"global_headers": {
+					"X-Real-IP": "$tyk_context.headers_X-Real-IP",
+					"X-Tyk-Real-IP": "$tyk_context.remote_addr",
+					"X-Tyk-X-Forwarded-For": "$tyk_context.headers_X_Forwarded_For"
+				},
+				"name": "Default",
+				"use_extended_paths": true
+			}
+		}
+	}
+}

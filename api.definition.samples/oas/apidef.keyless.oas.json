@@ -1,0 +1,55 @@
+{
+  "oas": {
+    "components": {
+      "securitySchemes":{
+        "authorization": {
+          "in": "header",
+          "name": "Authorization",
+          "type": "apiKey"
+        }
+      }
+    },
+    "info": {
+      "title": "",
+      "version": ""
+    },
+    "openapi": "",
+    "paths": null,
+    "security": [
+      {
+        "authorization": []
+      }
+    ],
+    "servers": [
+      {
+        "url": "http://localhost:8181/keyless/"
+      }
+    ],
+    "x-tyk-api-gateway":{
+      "info": {
+        "name": "keyless",
+        "state": {
+          "active": true
+        }
+      },
+      "middleware": {
+        "global": {
+          "cache": {
+            "enabled": true,
+            "timeout": 60
+          }
+        }
+      },
+      "server": {
+        "listenPath": {
+          "value": "/keyless/",
+          "strip": true
+        },
+        "slug": "keyless"
+      },
+      "upstream":{
+        "url": "http://httpbin.org/"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+type Query {
+  response: Response
+}
+
+type Response {
+  args: JSON
+  data: String
+  files: JSON
+  form: JSON
+  headers: Headers
+  json: JSON
+  origin: String
+  url: String
+}
+
+type Headers {
+  Accept: String
+  Auth: String
+  Authorization: String
+  Host: String
+  Test: String
+}

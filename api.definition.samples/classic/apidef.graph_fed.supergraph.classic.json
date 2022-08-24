@@ -1,0 +1,62 @@
+{
+	"api_id": "ebf5ecc5-2bff-4700-aabf-28ddb08483b4",
+	"auth_configs": {
+		"authToken": {
+			"auth_header_name": "Authorization"
+		}
+	},
+	"enable_jwt": false,
+	"id": "ebf5ecc5-2bff-4700-aabf-28ddb08483b4",
+	"name": "GraphQL API",
+	"org_id": "",
+	"proxy": {
+		"listen_path": "/api/",
+		"strip_listen_path": true,
+		"target_url": ""
+	},
+	"use_basic_auth": false,
+	"use_keyless": true,
+	"version_data": {
+		"not_versioned": true,
+		"versions": {
+			"Default": {
+				"name": "Default",
+				"use_extended_paths": true
+			}
+		}
+	},
+	"enable_coprocess_auth": false,
+	"graphql": {
+		"schema": "type Query {\n  characters(filter: FilterCharacter, page: Int): Characters\n}\n\ninput FilterCharacter {\n  name: String\n  status: String\n  species: String\n  type: String\n  gender: String! = \"M\"\n}\n\ntype Characters {\n  info: Info\n  results: [Character]\n}\n\ntype Info {\n  count: Int\n  next: Int\n  pages: Int\n  prev: Int\n}\n\ntype Character {\n  gender: String\n  id: ID\n  name: String\n}",
+		"enabled": true,
+		"engine": {
+			"field_configs": [],
+			"data_sources": []
+		},
+		"type_field_configurations": [],
+		"execution_mode": "supergraph",
+		"proxy": {
+			"auth_headers": {}
+		},
+		"subgraph": {
+			"sdl": ""
+		},
+		"supergraph": {
+			"subgraphs": [
+				{
+					"api_id": "sw",
+					"name": "SW API",
+					"url": "tyk://sw-api/",
+					"sdl": "type Query {\n  characters(filter: FilterCharacter, page: Int): Characters\n}\n\ninput FilterCharacter {\n  name: String\n  status: String\n  species: String\n  type: String\n  gender: String! = \"M\"\n}\n\ntype Characters {\n  info: Info\n  results: [Character]\n}\n\ntype Info {\n  count: Int\n  next: Int\n  pages: Int\n  prev: Int\n}\n\ntype Character {\n  gender: String\n  id: ID\n  name: String\n}"
+				}
+			],
+			"merged_sdl": "type Query {\n  characters(filter: FilterCharacter, page: Int): Characters\n}\n\ninput FilterCharacter {\n  name: String\n  status: String\n  species: String\n  type: String\n  gender: String! = \"M\"\n}\n\ntype Characters {\n  info: Info\n  results: [Character]\n}\n\ntype Info {\n  count: Int\n  next: Int\n  pages: Int\n  prev: Int\n}\n\ntype Character {\n  gender: String\n  id: ID\n  name: String\n}",
+			"global_headers": {}
+		},
+		"version": "2",
+		"playground": {
+			"enabled": true,
+			"path": "/playground"
+		}
+	}
+}

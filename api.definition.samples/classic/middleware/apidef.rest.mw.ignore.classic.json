@@ -1,0 +1,73 @@
+{
+	"active": true,
+	"allowed_ips": [],
+	"api_id": "5hzyg08n1xvqo3ferdlt9wib7s",
+	"auth_configs": {
+    "authToken": {
+      "auth_header_name": "Authorization"
+    }
+  },
+	"enable_batch_request_support": true,
+	"enable_context_vars": false,
+	"enable_ip_whitelisting": false,
+  "name": "Ignore Middlware",
+  "protocol": "http",
+  "proxy": {
+    "listen_path": "/mw-ignore/",
+    "target_url": "http://httpbin.org/anything",
+    "strip_listen_path": true
+  },
+  "slug": "mw-ignore",
+	"use_keyless": false,
+	"use_standard_auth": true,
+	"version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true,
+				"global_headers": {},
+				"extended_paths": {
+					"ignored": [
+						{
+							"path": "/",
+							"ignore_case": false,
+							"method_actions": {
+								"GET": {
+									"action": "no_action",
+									"code": 200,
+									"headers": {}
+								}
+							}
+						},
+						{
+							"path": "/ignore",
+							"ignore_case": false,
+							"method_actions": {
+								"GET": {
+									"action": "no_action",
+									"code": 200,
+									"headers": {}
+								}
+							}
+						},
+						{
+							"path": "/Ignore-Case",
+							"ignore_case": true,
+							"method_actions": {
+								"GET": {
+									"action": "reply",
+									"code": 200,
+									"data": "Hello World",
+									"headers": {
+										"x-tyk-override": "tyk-override"
+									}
+								}
+							}
+						}
+          ]
+				}
+			}
+		}
+  }
+}

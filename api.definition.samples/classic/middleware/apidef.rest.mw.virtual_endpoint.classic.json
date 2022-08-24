@@ -1,0 +1,60 @@
+{
+	"active": true,
+	"allowed_ips": [],
+	"api_id": "k9rei8hgx41zn7msj5cbpawyof",
+	"auth_configs": {
+		"authToken": {
+			"auth_header_name": "Authorization"
+		}
+	},
+	"enable_context_vars": true,
+	"enable_ip_whitelisting": false,
+	"name": "REST Virtual Endpoint Middleware",
+	"org_id": "default",
+	"protocol": "http",
+	"proxy": {
+		"listen_path": "/mw-virtual-endpoint/",
+		"strip_listen_path": true,
+		"target_url": "http://httpbin.org/anything"
+	},
+	"slug": "mw-virtual-endpoint",
+	"use_keyless": true,
+	"version_data": {
+		"not_versioned": true,
+		"versions": {
+			"Default": {
+				"name": "Default",
+				"extended_paths": {
+					"virtual": [
+						{
+							"function_source_type": "blob",
+							"function_source_uri": "",
+							"method": "GET",
+							"path": "/blob",
+							"response_function_name": "myVirtualHandler",
+							"use_session": false
+						},
+						{
+							"function_source_type": "file",
+							"function_source_uri": "middleware/virtual-endpoint/response-demo-virtual-endpoint.js",
+							"method": "GET",
+							"path": "/file-01",
+							"response_function_name": "response-demo-virtual-endpoint",
+							"use_session": false
+						},
+						{
+							"function_source_type": "file",
+							"function_source_uri": "middleware/virtual-endpoint/demoVirtualEndpointResponse.js",
+							"method": "GET",
+							"path": "/file-02",
+							"response_function_name": "demoVirtualEndpointResponse",
+							"use_session": false
+						}
+					]
+				},
+				"global_headers": {},
+				"use_extended_paths": true
+			}
+		}
+	}
+}

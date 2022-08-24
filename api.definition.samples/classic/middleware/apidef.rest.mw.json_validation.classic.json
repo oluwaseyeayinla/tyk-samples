@@ -1,0 +1,62 @@
+{
+  "name": "HTTP Bin Site",
+  "slug": "http-bin-site",
+  "api_id": "ulxhvn6d1cw07854yop2eabfki",
+  "org_id": "default",
+  "use_keyless":true,
+  "protocol": "http",
+  "auth_configs": {
+    "authToken": {
+      "auth_header_name": "Authorization"
+    }
+  },
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true,
+				"global_headers": {},
+				"extended_paths": {
+					"validate_json": [
+						{
+							"path": "/anything",
+							"method": "POST",
+							"schema": {
+								"properties": {
+									"age": {
+										"description": "Age in years",
+										"minimum": 0,
+										"type": "integer"
+									},
+									"firstName": {
+										"type": "string"
+									},
+									"lastName": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"firstName",
+									"lastName"
+								],
+								"title": "Person",
+								"type": "object"
+							},
+							"error_response_code": 422
+						}
+					]
+				}
+			}
+		}
+  },
+  "proxy": {
+    "listen_path": "/json-validation/",
+    "target_url": "http://httpbin.org/",
+    "strip_listen_path": true
+  },
+	"enable_context_vars": true,
+	"enable_ip_whitelisting": false,
+	"allowed_ips": [],
+  "active": true
+}

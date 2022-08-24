@@ -1,0 +1,15 @@
+### Get Tyk Schema
+GET http://localhost:7080/api/schema
+authorization: d505971baf194b96469ba84aca02c9eb
+
+### List API Definitions
+GET http://localhost:7080/api/apis
+Authorization: d505971baf194b96469ba84aca02c9eb
+
+GET http://localhost:7070/hello
+
+GET http://localhost:6060/rest-plugin-python
+Authorization: d505971baf194b96469ba84aca02c9eb
+
+
+
