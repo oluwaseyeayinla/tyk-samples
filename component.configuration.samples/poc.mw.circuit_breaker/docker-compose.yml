@@ -1,0 +1,74 @@
+version: '3.3'
+services:
+  tyk_dashboard:
+    container_name: tyk_dashboard
+    image: tykio/tyk-dashboard:latest
+    ports:
+    - "3000:3000"
+    - "5000:5000"
+    networks:
+    - tyk
+    volumes:
+    - D:\Tyk\tyk_analytics.conf:/opt/tyk-dashboard/tyk_analytics.conf
+    depends_on:
+    - tyk_redis
+    - tyk_mongo
+
+  tyk_gateway:
+    container_name: tyk_gateway
+    image: tykio/tyk-gateway:latest
+    ports:
+    - "8080:8080"
+    networks:
+    - tyk
+    volumes:
+    - D:\Tyk\tyk.conf:/opt/tyk-gateway/tyk.conf
+    depends_on:
+    - tyk_redis
+
+  tyk_redis:
+    container_name: redis
+    image: redis:latest
+    ports:
+    - "6379:6379"
+    volumes:
+    - redis-data:/data
+    networks:
+    - tyk
+
+  tyk_mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+    - "27017:27017"
+    volumes:
+    - mongo-data:/data/db
+    networks:
+    - tyk
+
+  httpbin:
+    container_name: httpbin
+    image: kennethreitz/httpbin
+    ports:
+    - "8888:80"
+    networks:
+    - tyk
+    environment:
+    - GUNICORN_CMD_ARGS=${GUNICORN_CMD_ARGS}
+
+  webhook_httpbin:
+    container_name: webhook_httpbin
+    image: kennethreitz/httpbin
+    ports:
+    - "8889:80"
+    networks:
+    - tyk
+    environment:
+    - GUNICORN_CMD_ARGS=${GUNICORN_CMD_ARGS}
+
+volumes:
+  redis-data:
+  mongo-data:
+
+networks:
+  tyk:

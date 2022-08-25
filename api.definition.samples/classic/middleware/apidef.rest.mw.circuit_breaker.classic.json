@@ -229,7 +229,44 @@
 	"enable_proxy_protocol": false,
 	"enable_signature_checking": false,
 	"event_handlers": {
-		"events": {}
+		"events": {
+      "BreakerReset": [
+        {
+          "handler_name": "eh_web_hook_handler",
+          "handler_meta": {
+            "method": "POST",
+            "api_model": {},
+            "header_map": {
+              "Content-Type": "application/json"
+            },
+            "template_path": "",
+            "name": "Circuit Breaker",
+            "target_path": "https://eoxg5xp6tjz9e0.m.pipedream.net",
+            "org_id": "62d7feb52e6d3a0001b832a9",
+            "id": "630797542e6d3a0001bc7999",
+            "event_timeout": 60
+          }
+        }
+      ],
+      "BreakerTripped": [
+        {
+          "handler_name": "eh_web_hook_handler",
+          "handler_meta": {
+            "method": "POST",
+            "api_model": {},
+            "header_map": {
+              "Content-Type": "application/json"
+            },
+            "template_path": "",
+            "name": "Circuit Breaker",
+            "target_path": "https://eoxg5xp6tjz9e0.m.pipedream.net",
+            "org_id": "62d7feb52e6d3a0001b832a9",
+            "id": "630797542e6d3a0001bc7999",
+            "event_timeout": 60
+          }
+        }
+      ]
+    }
 	},
 	"expire_analytics_after": 0,
 	"global_rate_limit": {
@@ -341,7 +378,7 @@
 		"storage_engine": "",
 		"meta": {}
 	},
-	"slug": "rest-middleware-circuit-breaker",
+	"slug": "rest-mw-circuit-breaker",
 	"strip_auth_data": false,
 	"tag_headers": [],
 	"tags": [],
@@ -397,13 +434,21 @@
 					],
 					"circuit_breakers": [
 						{
-							"path": "/id",
-							"method": "GET",
-							"threshold_percent": 0.5,
-							"samples": 10,
-							"return_to_service_after": 15,
-							"disable_half_open_state": false
-						}
+              "path": "/status/5\\d{2}",
+              "method": "POST",
+              "threshold_percent": 0.1,
+              "samples": 10,
+              "return_to_service_after": 20,
+              "disable_half_open_state": true
+            },
+            {
+              "path": "/delay/\\d{1,2}",
+              "method": "POST",
+              "threshold_percent": 0.5,
+              "samples": 4,
+              "return_to_service_after": 20,
+              "disable_half_open_state": false
+            }
 					]
 				}
 			}
