@@ -8,8 +8,8 @@
     "enable_proxy_protocol": false,
     "api_id": "62e2c4e86dc78f880fa0d993",
     "org_id": "c563d9bc-db63-4964-af93-7ff2f3207bbc",
-    "use_keyless": false,
-    "use_oauth2": true,
+    "use_keyless": true,
+    "use_oauth2": false,
     "use_openid": false,
     "openid_options": {
       "providers": [],
@@ -298,8 +298,8 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/aura-api-tyktransformtest/",
-      "target_url": "https://console-tyktransformtest.neo4j.io",
+      "listen_path": "/aura-api-dan/",
+      "target_url": "http://httpbin.org/anything",
       "disable_strip_slash": true,
       "strip_listen_path": true,
       "enable_load_balancing": false,
