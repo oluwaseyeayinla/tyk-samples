@@ -1,0 +1,49 @@
+{
+  "_id": "62e2c4e8cb3d384b31ea55fd",
+  "id": "62e2c4e8cb3d384b31ea55fd",
+  "name": "aura-api-policy-tyktransformtest",
+  "org_id": "c563d9bc-db63-4964-af93-7ff2f3207bbc",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "62e2c4e86dc78f880fa0d993": {
+      "api_name": "aura-api-tyktransformtest",
+      "api_id": "62e2c4e86dc78f880fa0d993",
+      "versions": [
+        "v0-alpha0"
+      ],
+      "allowed_urls": [
+        {
+          "url": "/instances",
+          "methods": [
+            "GET"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": "",
+      "available_auth_types": [
+        "oauth"
+      ]
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "tags": [],
+  "key_expires_in": 86400,
+  "partitions": {
+    "quota": true,
+    "rate_limit": true,
+    "complexity": false,
+    "acl": true,
+    "per_api": false
+  }
+}

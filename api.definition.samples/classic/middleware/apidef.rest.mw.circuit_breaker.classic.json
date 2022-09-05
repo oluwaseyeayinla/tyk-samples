@@ -426,12 +426,6 @@
 				"global_size_limit": 0,
 				"override_target": "",
 				"extended_paths": {
-					"track_endpoints": [
-						{
-							"path": "/uuid",
-							"method": "GET"
-						}
-					],
 					"circuit_breakers": [
 						{
               "path": "/status/5\\d{2}",
@@ -449,6 +443,13 @@
               "return_to_service_after": 20,
               "disable_half_open_state": false
             }
+					],
+          "hard_timeouts": [
+						{
+							"path": "/delay/\\d{1,2}",
+							"method": "POST",
+							"timeout": 1
+						}
 					]
 				}
 			}

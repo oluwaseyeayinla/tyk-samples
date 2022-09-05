@@ -1,0 +1,14 @@
+{
+  "type": "apidef",
+  "files": [
+    {
+      "file": "aura-api.json",
+      "oas": {}
+    }
+  ],
+  "policies": [
+    {
+      "file": "aura-api-policy.json"
+    }
+  ]
+}
