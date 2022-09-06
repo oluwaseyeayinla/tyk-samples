@@ -265,6 +265,7 @@
   },
   "global_headers": {
     "X-Console-User-Id": "$tyk_meta.console_user_id",
+    "X-Developer-Email": "$tyk_meta.tyk_developer_email",
     "X-Forwarded-Content-Length": "$tyk_context.headers_Content_Length"
   },
   "global_headers_remove": [],
