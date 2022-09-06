@@ -4,11 +4,12 @@
     {
       "file": "aura-api.json",
       "oas": {}
+    },
+    {
+      "file": "aura-api-tyktransformtest.json",
+      "oas": {}
     }
   ],
   "policies": [
-    {
-      "file": "aura-api-policy.json"
-    }
   ]
 }
