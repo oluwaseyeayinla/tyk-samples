@@ -380,7 +380,12 @@
     "blacklisted_ips": [],
     "dont_set_quota_on_create": false,
     "expire_analytics_after": 0,
-    "response_processors": [],
+    "response_processors": [
+      {
+				"name": "response_body_transform",
+				"options": {}
+			}
+    ],
     "CORS": {
       "enable": false,
       "allowed_origins": [
